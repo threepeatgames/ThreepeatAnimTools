@@ -330,7 +330,7 @@ void UThreepeatAnimToolsBPLibrary::ThreepeatScrollSequencerToTopOrBottom(bool bS
 				UMovieSceneSequence* RootSequence = Sequencer->GetRootMovieSceneSequence();
 
 				UMovieScene* MovieScene = RootSequence->GetMovieScene();
-				const TArray<UMovieSceneTrack*>& MasterTracks = MovieScene->GetMasterTracks();
+				const TArray<UMovieSceneTrack*>& MasterTracks = MovieScene->GetTracks();
 
 				if (MasterTracks.Num() > 0)
 				{

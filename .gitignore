@@ -1,1 +1,3 @@
 *.pdb
+Binaries/*
+Intermediate/*
