@@ -11,7 +11,7 @@
 	"MarketplaceURL": "com.epicgames.launcher://ue/Fab/product/576ae5f6-df60-42cc-b0e7-5681beb6d585",
 	"FabURL": "com.epicgames.launcher://ue/Fab/product/576ae5f6-df60-42cc-b0e7-5681beb6d585",
 	"SupportURL": "",
-	"EngineVersion": "5.6.0",
+	"EngineVersion": "5.7.0",
 	"CanContainContent": true,
 	"Installed": true,
 	"Modules": [

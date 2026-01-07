@@ -1,3 +1,6 @@
 *.pdb
 Binaries/*
 Intermediate/*
+
+# Rider IDE
+.idea/

@@ -119,7 +119,7 @@ void UCurveEditorMakeHoldFilter::ApplyFilter_Impl(TSharedRef<FCurveEditor> InCur
 
 			Curve->Modify();
 			Curve->SetKeyPositions(KeyHandlesToModify, NewKeyPositions);
-			Curve->RemoveKeys(KeyHandlesToDelete);
+			Curve->RemoveKeys(KeyHandlesToDelete, 0.0);
 			int numFramesPastFirst = FMath::RoundToInt(((SelectedKeyPositions[lastKeyNum].InputValue - SelectedKeyPositions[0].InputValue) / 2.0)/frameInterval);
 			UE_LOG(LogTemp, Warning, TEXT("num frames past first: %d"), numFramesPastFirst);
 			Curve->AddKey(FKeyPosition(SelectedKeyPositions[0].InputValue + numFramesPastFirst * frameInterval, holdValue), InCurveEditor->GetDefaultKeyAttribute().Get());
